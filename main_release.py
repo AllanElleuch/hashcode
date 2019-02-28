@@ -1,2 +1,2 @@
 from runner import run
-run()
+run(is_release=True)
