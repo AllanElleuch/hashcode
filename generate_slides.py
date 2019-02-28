@@ -16,7 +16,7 @@ def generate_slides_from_photos(photos):
   while len(vertical_pool) > 1:
     photo = vertical_pool[0]
     scores = []
-    for other_photo in vertical_pool[1:10]:
+    for other_photo in vertical_pool[1:100]:
       score = photo.calculate_point(other_photo)
       scores.append(score)
     best_score_index = scores.index(max(scores))
