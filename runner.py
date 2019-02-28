@@ -18,5 +18,5 @@ def run(is_release=False):
     output_file_path = os.path.join(DATASET_PATH, '..', 'out', file_path)
     photos = parser(dataset_file_path)
     slides = generate_slides_from_photos(photos)
-    slides = order_slides(slides)
+    #slides = order_slides(slides)
     output(slides, output_file_path)

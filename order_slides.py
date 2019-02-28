@@ -9,7 +9,7 @@ def order_slides(slides):
     for other_slide in slides[1:10]:
       score = slide.calculate_point(other_slide)
       scores.append(score)
-    best_score_index = scores.index(max(scores))
+    best_score_index = scores.index(max(scores))  +1
     reordered_slides.append(slide)
     reordered_slides.append(other_slide)
     del slides[best_score_index]
