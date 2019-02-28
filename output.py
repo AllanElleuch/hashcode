@@ -1,6 +1,6 @@
-def output(slides):
+def output(slides,filename):
     lenSlides = len(slides)
-    file = "out.txt"
+    file = filename
     with open(file, 'w') as f:
         f.write('{} '.format(lenSlides))
         f.write('\n')
