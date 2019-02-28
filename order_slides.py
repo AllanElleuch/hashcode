@@ -11,7 +11,7 @@ def order_slides(slides):
       scores.append(score)
     best_score_index = scores.index(max(scores))  +1
     reordered_slides.append(slide)
-    reordered_slides.append(other_slide)
+    reordered_slides.append(slides[best_score_index])
     del slides[best_score_index]
     del slides[0]
   
