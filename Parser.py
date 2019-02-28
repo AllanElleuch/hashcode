@@ -1,3 +1,5 @@
+from photo import Photo
+
 def parser(file):
     photos = []
     with open(file, 'r') as f:
@@ -6,10 +8,12 @@ def parser(file):
             else:
                 line = line.rstrip('\r\n')
                 orientation,numberTag, *tags =  line.split(' ') #orientation = V/H
-                print(tags)
-                photos.append("a") #replace with constructor of a photo
+                isvertical = True if orientation=="V" else False
+                photo = Photo(isvertical,numberTag,tags)
+                #print(photo)
+                photos.append(photo) #replace with constructor of a photo
     return photos #rides, int(rows), int(cols), int(n_vehicles), int(bonus), int(t)
 
 #to test
-#parser("./a_example.txt")
+parser("./a_example.txt")
 
