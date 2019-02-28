@@ -8,5 +8,9 @@ for file_path in os.listdir(DATASET_PATH):
   photos = parser(dataset_file_path)
   print(photos)
 
+  sorted(photos, key=lambda s: len(s.tags),reverse=True)
+
+  print(photos)
+
   # For testing only, breaks the loop
   break

@@ -7,6 +7,7 @@ def parser(file):
             if i == 0: nbRow = line.split(' ')
             else:
                 line = line.rstrip('\r\n')
+                print(line.split(' '))
                 orientation,numberTag, *tags =  line.split(' ') #orientation = V/H
                 isvertical = True if orientation=="V" else False
                 photo = Photo(isvertical,numberTag,tags)
