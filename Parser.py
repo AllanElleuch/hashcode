@@ -9,15 +9,15 @@ def parser(file):
             else:
                 
                 line = line.rstrip('\r\n')
-                print(line.split(' '))
+                #print(line.split(' '))
                 orientation,numberTag, *tags =  line.split(' ') #orientation = V/H
                 isvertical = True if orientation=="V" else False
                 photo = Photo(id,isvertical,numberTag,tags)
-                id++
+                id+=1
                 #print(photo)
                 photos.append(photo) #replace with constructor of a photo
     return photos #rides, int(rows), int(cols), int(n_vehicles), int(bonus), int(t)
 
 #to test
-parser("./a_example.txt")
+#parser("./a_example.txt")
 

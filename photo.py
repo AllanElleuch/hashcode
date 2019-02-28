@@ -6,7 +6,7 @@ class Photo:
     self.nb_tags = len(tags)
 
   def __repr__(self):
-        return " is vertical : " + str(self.is_vertical) +" nbtags : " + str(self.nb_tags) + " tags :  "+ " ".join(self.tags)  +"\n"
+        return " ID : " + str(self.id) + " is vertical : " + str(self.is_vertical) +" nbtags : " + str(self.nb_tags) + " tags :  "+ " ".join(self.tags)  +"\n"
 
 
   def calculate_point(self, other_photo):
