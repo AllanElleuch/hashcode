@@ -2,15 +2,15 @@ from photo import Photo
 
 class Slide:
   def __init__(self, is_vertical, photos):
-    self.id = self.compute_id()
     self.is_vertical = is_vertical
     self.photos = photos
+    self.id = self.compute_id()
     self.tags = self.compute_tags()
   
   def compute_id(self):
     ids = []
     for photo in self.photos:
-      ids.append(photo.id)
+      ids.append(str(photo.id))
     return ' '.join(ids)
 
   def compute_tags(self):
