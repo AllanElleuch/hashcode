@@ -11,7 +11,7 @@ def generate_slides_from_photos(photos):
       slide = Slide(False, [photo])
       slides.append(slide)
   
-  print(len(vertical_pool))
+  print('Vertical count:', len(vertical_pool))
 
   while len(vertical_pool) > 1:
     photo = vertical_pool[0]
