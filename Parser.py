@@ -15,5 +15,5 @@ def parser(file):
     return photos #rides, int(rows), int(cols), int(n_vehicles), int(bonus), int(t)
 
 #to test
-parser("./a_example.txt")
+#parser("./a_example.txt")
 

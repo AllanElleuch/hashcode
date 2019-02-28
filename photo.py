@@ -4,6 +4,10 @@ class Photo:
     self.tags = tags
     self.nb_tags = len(tags)
 
+  def __repr__(self):
+        return "is vertical : " + str(self.is_vertical) +" nbtags : " + self.nb_tags + " tags : ".join(self.tags)  
+
+
   def calculate_point(self, other_photo):
     return min(
       self.common_tags(other_photo),
