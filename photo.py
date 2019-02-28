@@ -1,5 +1,6 @@
 class Photo:
-  def __init__(self, is_vertical, nb_tags, tags):
+  def __init__(self, identifier, is_vertical, nb_tags, tags):
+    self.id = identifier
     self.is_vertical = is_vertical
     self.tags = tags
     self.nb_tags = len(tags)
