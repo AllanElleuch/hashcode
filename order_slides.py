@@ -4,14 +4,14 @@ def order_slides(slides):
   reordered_slides = []
 
   while len(slides) > 1:
-    photo = slides[0]
+    slide = slides[0]
     scores = []
-    for other_photo in slides[1:10]:
-      score = photo.calculate_point(other_photo)
+    for other_slide in slides[1:10]:
+      score = slide.calculate_point(other_slide)
       scores.append(score)
     best_score_index = scores.index(max(scores))
-    slide = Slide(True, [photo, slides[best_score_index]])
     reordered_slides.append(slide)
+    reordered_slides.append(other_slide)
     del slides[best_score_index]
     del slides[0]
   
