@@ -1,5 +1,5 @@
 # Solution Qualification Round HASH CODE 2019
-Project made by Allan Elleuch and Arnaud Delinger
+Project made by Allan Elleuch and Arnaud Dellinger
 
 ## Usage
 
