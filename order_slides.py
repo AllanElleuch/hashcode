@@ -6,8 +6,11 @@ def order_slides(slides):
   while len(slides) > 1:
     slide = slides[0]
     scores = []
-    for other_slide in slides[1:10]:
+    for other_slide in slides[1:200]:
       score = slide.calculate_point(other_slide)
+      if(score>2):
+            scores.append(score)
+            break;
       scores.append(score)
     best_score_index = scores.index(max(scores))  +1
     reordered_slides.append(slide)

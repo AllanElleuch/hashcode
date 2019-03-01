@@ -10,7 +10,7 @@ def run(is_release=False):
   files = os.listdir(DATASET_PATH)
 
   if not is_release:
-    files = files[0:2]
+    files = files[1:2]
 
   for file_path in files:
     print('File:', file_path)
@@ -18,5 +18,6 @@ def run(is_release=False):
     output_file_path = os.path.join(DATASET_PATH, '..', 'out', file_path)
     photos = parser(dataset_file_path)
     slides = generate_slides_from_photos(photos)
-    #slides = order_slides(slides)
+
+    slides = order_slides(slides)
     output(slides, output_file_path)
