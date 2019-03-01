@@ -3,6 +3,8 @@
 
 Project made by Allan Elleuch and Arnaud Dellinger
 
+Solution for Google Hash Code 2019 Qualification Round. Problem statement can be found [here](https://github.com/AllanElleuch/hashcode-2019-Qualification-Round/blob/master/problem%20statement-%20photo_slideshow.pdf). 
+
 ## Usage
 
 `python3 .\main_release.py`
